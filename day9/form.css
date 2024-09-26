@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  height: 560px;
+  width: 400px;
+  margin-left: 450px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+  border-radius: 30px;
+  background-color: azure;
+}
+.form h1 {
+  color: rgb(75, 71, 71);
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+.form .colum1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.form .colum1 label {
+  color: rgb(79, 77, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.form .colum1 input {
+  padding: 10px 90px 10px 2px;
+  border: 1px solid rgba(104, 102, 102, 0.543);
+  border-radius: 10px;
+}
+.form .colum2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.form .colum2 label {
+  color: rgb(79, 77, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.form .colum2 input {
+  padding: 10px 90px 10px 2px;
+  border: 1px solid rgba(104, 102, 102, 0.543);
+  border-radius: 10px;
+}
+.form .colum3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.form .colum3 label {
+  color: rgb(79, 77, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.form .colum3 input {
+  padding: 10px 140px 10px 2px;
+  border: 1px solid rgba(104, 102, 102, 0.543);
+  border-radius: 10px;
+}
+.form .colum4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.form .colum4 label {
+  color: rgb(79, 77, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.form .colum4 input {
+  padding: 10px 90px 10px 2px;
+  border: 1px solid rgba(104, 102, 102, 0.543);
+  border-radius: 10px;
+}
+.form .colum5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.form .colum5 label {
+  color: rgb(79, 77, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.form .colum5 input {
+  padding: 10px 90px 10px 2px;
+  border: 1px solid rgba(104, 102, 102, 0.543);
+  border-radius: 10px;
+}
+.form .colum6 input {
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: rgba(11, 169, 232, 0.753);
+  border: 1px solid rgb(113, 108, 108);
+  border-radius: 30px;
+}/*# sourceMappingURL=form.css.map */

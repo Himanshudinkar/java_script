@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .conatiner {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: start;
+        align-items: center;
+      }
+      .conatiner .hero{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .conatiner .hero img{
+        height:100px;
+        width: 100px;
+        border: 2px solid black;
+      }
+      .conatiner .hero2{
+        border: 2px solid black;
+        height: 530px;
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+
+      <div class="hero">
+        <img onmouseenter="photo1();"
+          src="https://5.imimg.com/data5/SELLER/Default/2023/6/312743853/CM/HM/IA/4630526/apple-iphone-14-pro-max-128gb-deep-purple-mobile-phone-250x250.png"
+          alt=""
+        />
+        <img onmouseenter="photo2();"
+          src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone15hero-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693086369781"
+          alt=""
+        />
+        <img onmouseenter="photo3();"
+          src="https://5.imimg.com/data5/SELLER/Default/2023/3/296178265/EX/FQ/OZ/186724856/vivo-mobile-phone.jpg"
+          alt=""
+        />
+        <img onmouseenter="photo4();"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNSwnDruihYbl7UttfoiKXd4IRs9UVlzNLfg&s"
+          alt=""
+        />
+        </div>
+
+      <div class="hero2">
+      <img id="photo" height="520px" src="https://5.imimg.com/data5/SELLER/Default/2023/6/312743853/CM/HM/IA/4630526/apple-iphone-14-pro-max-128gb-deep-purple-mobile-phone-250x250.png" alt="">
+    </div>
+
+  </div>
+    <script src="/day8/task.js"></script>
+  </body>
+</html>
