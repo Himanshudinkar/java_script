@@ -23,7 +23,7 @@ function data(){
 
         return false;
     }
-     if(lname === "")
+    else if(lname === "")
     {
         document.querySelector('#errorlname').innerHTML = "Please enter last your name";
         let  selectname = document.querySelector('#lname');
@@ -32,16 +32,36 @@ function data(){
 
         return false;
     }
-     if(dob === "")
+    else if(dob === "")
     {
-        document.querySelector('#errordob').innerHTML = "Please enter your date  of birth";
+        document.querySelector('#errordob').innerHTML = "Please enter your mobile number";
         let  selectname = document.querySelector('#dob');
         selectname.style.borderColor = "red";
         selectname.style.outlineColor = "red";
 
         return false;
     }
-     if(email === "")
+    else if(dob.length !== 10)
+    {
+        document.querySelector('#errordob').innerHTML = "mobile number should be 10 digits";
+        let  selectname = document.querySelector('#dob');
+        selectname.style.borderColor = "red";
+        selectname.style.outlineColor = "red";
+
+        return false;
+
+    }
+    else if(isNaN(dob))
+    {
+        document.querySelector('#errordob').innerHTML = "mobile number should be number";
+        let  selectname = document.querySelector('#dob');
+        selectname.style.borderColor = "red";
+        selectname.style.outlineColor = "red";
+
+        return false;
+
+    }
+    else if(email === "")
     {
         document.querySelector('#erroremail').innerHTML = "Please enter your email";
         let  selectname = document.querySelector('#email');
@@ -50,7 +70,19 @@ function data(){
 
         return false;
     }
-     if(psw === "")
+
+    else if(!(email.includes('@') && email.includes(".com")))
+    {
+        document.querySelector('#erroremail').innerHTML = "plse enter valid email";
+        let  selectname = document.querySelector('#email');
+        selectname.style.borderColor = "red";
+        selectname.style.outlineColor = "red";
+
+        return false;
+
+    }
+    
+    else if(psw === "")
     {
         document.querySelector('#errorpsw').innerHTML = "Please enter your password";
         let  selectname = document.querySelector('#psw');
