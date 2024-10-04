@@ -91,6 +91,34 @@ function data(){
 
         return false;
     }
+    else if(!
+        (
+            psw.match(/[1234567890]/)
+            &&
+            psw.match(/[!@#$%^&*()~]/)
+            &&
+            psw.match(/[qwertyuiopasdfghjklzxcvbnm]/)
+            &&
+            psw.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/)
+        )
+    )
+    {
+        document.querySelector('#errorpsw').innerHTML = "Please enter strong password";
+        let  selectname = document.querySelector('#psw');
+        selectname.style.borderColor = "red";
+        selectname.style.outlineColor = "red";
+
+        return false;
+    }
+    else if(psw !== cpsw)
+    {
+        window.alert("password and confirm password not match");
+        document.querySelector('cpsw').value ="";
+        document.querySelector('psw').value ="";
+        document.querySelector('psw').focus() ="";
+
+        return false;
+    }
 }
 
 function s(arg){
