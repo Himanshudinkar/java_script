@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.logo h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -4px 4px #ef3550;
+}
+.logo img{
+    width: 200px;
+    height: 200px;
+}
+
+#welcome{
+    display: none;
+} 
+
+.column1 h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    color: #ef3550;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+
+.column2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    background-image: url(https://img.freepik.com/premium-photo/supersale-banner_1138645-535.jpg?w=996);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.column2 .multiphoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+     margin-left: 30px;
+}
+.column2 .multiphoto img{
+    width: 60px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.509);
+    padding: 5px;
+}
+.column2 .singlephoto{
+    overflow: hidden;
+    height: 380px;
+    width: 300px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.column2 .singlephoto img{
+   height: 380px;
+   width: 300px;
+   padding: 10px;
+}
+
+.column3{
+    margin-top: 50px;
+    background-color: #ef35513f;
+    padding: 20px;
+}
+
+.column3 .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.column3 .form input{
+    border: none;
+    border-bottom: 1px solid #ef3550;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    outline: none;
+    background-color:#ef355100;
+}
+
+.column3 .form ::-webkit-input-placeholder { 
+   color: rgb(41, 137, 158);
+}
+
+.column3 .form button{
+    color: #ef3550;
+    font-size: 17px;
+    padding: 10px;
+    border: 1px solid #ef3550;
+}
+
+.cardcontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-top: 100px;
+    background-color: aliceblue;
+}
+
+.cardcontent .cardimage img{
+    height: 150px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.cardcontent .cardinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.cardcontent .cardinfo h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #ef3550;
+}
+.cardcontent .cardinfo button{
+    color: #ef3550;
+    font-size: 17px;
+    padding: 10px;
+    border: 1px solid #ef3550;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 30px;
+}

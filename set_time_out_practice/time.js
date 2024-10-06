@@ -5,4 +5,9 @@ function card(){
         let selecttimeout = document.querySelector('#timeout');
         selecttimeout.style.display = "block";
     }
+} 
+
+function cross(){
+    let selecttimeout = document.querySelector('#timeout');
+    selecttimeout.style.display = "none";
 }

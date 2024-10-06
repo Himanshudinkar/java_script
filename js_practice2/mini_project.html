@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/js_practice2/mini_project.css" />
+    <title>Document</title>
+  </head>
+  <body onload="opening();">
+    <section id="opening">
+      <div class="logo">
+        <h1>Welcome To java script</h1>
+        <img
+          src="https://media.tenor.com/TReUojNlZ6wAAAAi/js-javascript.gif"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section id="welcome">
+      <div class="column1">
+        <h1
+          id="changfont"
+          onmouseenter="changfont();"
+          onmouseleave="returnfont();"
+        >
+          Welcome To generate card
+        </h1>
+      </div>
+
+      <div
+        class="column2"
+        onmouseenter="changeback();"
+        onmouseleave="returnback();"
+      >
+        <div class="multiphoto">
+          <img
+            src="https://rukminim2.flixcart.com/image/832/832/xif0q/card/v/z/6/1-happy-birthday-to-you-my-love-card-red-white-greeting-pickkart-original-imahy36atwzhemen.jpeg?q=70&crop=false"
+            alt=""
+            id="photo1"
+            onmouseenter="changephoto1();"
+          />
+          <img
+            src="https://rukminim2.flixcart.com/image/832/832/xif0q/card/z/e/u/1-happy-birthday-to-you-my-love-card-red-white-greeting-pickkart-original-imahy36ayshfz2jh.jpeg?q=70&crop=false"
+            alt=""
+            id="photo2"
+            onmouseenter="changephoto2();"
+          />
+          <img
+            src="https://rukminim2.flixcart.com/image/832/832/xif0q/card/c/j/x/1-happy-birthday-to-you-my-love-card-red-white-greeting-pickkart-original-imahy36adrw8gj6g.jpeg?q=70&crop=false"
+            alt=""
+            id="photo3"
+            onmouseenter="changephoto3();"
+          />
+          <img
+            src="https://rukminim2.flixcart.com/image/832/832/xif0q/card/5/q/c/1-happy-birthday-to-you-my-love-card-red-white-greeting-pickkart-original-imahy36avfysfnjx.jpeg?q=70&crop=false"
+            alt=""
+            id="photo4"
+            onmouseenter="changephoto4();"
+          />
+        </div>
+
+        <div class="singlephoto">
+          <img
+            src="https://rukminim2.flixcart.com/image/832/832/xif0q/card/v/z/6/1-happy-birthday-to-you-my-love-card-red-white-greeting-pickkart-original-imahy36atwzhemen.jpeg?q=70&crop=false"
+            alt=""
+            id="photo"
+            onmouseover="enterhover();"
+            onmouseleave=" outhover();"
+          />
+        </div>
+      </div>
+
+      <div class="column3">
+        <form action="">
+          <div class="form">
+            <input type="text" name="name" id="name" placeholder="Enter Name" />
+            <input
+              type="tel"
+              name="mobile"
+              id="mobile"
+              placeholder="Enter Mobile Number"
+            />
+            <input
+              type="text"
+              name="deg"
+              id="designation"
+              placeholder="Enter Designatin"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Enter Addresh"
+            />
+            <input
+              type="text"
+              name="image"
+              id="image"
+              placeholder="Enter Image Addressh"
+            />
+
+            <button onclick="return card();">Submit</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+    
+         <div class="output">
+
+         </div>
+
+
+    <script src="/js_practice2/mini_project.js"></script>
+  </body>
+</html>

@@ -26,7 +26,7 @@ function card(){
     alert("write code");
 
     document.querySelector('#output').innerHTML = d;
-    document.querySelector('form').style.display = "none"
+    document.querySelector('form').style.display = "none";
    
     return false;
 }

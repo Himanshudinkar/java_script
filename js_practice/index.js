@@ -121,3 +121,13 @@ function login(){
     }
 
 }
+
+function remove(){
+    let selectremove = document.querySelector('#name');
+    selectremove.style.borderColor = "black";
+    selectremove.style.outlineColor = "black";
+
+    let selecterrorremove = document.querySelector('#errorname');
+    selecterrorremove.innerHTML = "";
+
+}
