@@ -76,4 +76,38 @@ function gst(){
 
     window.alert("totel gst = " + totalGst);
 }
-gst();
+// gst();
+
+//(5) Write a JavaScript program to calculate tax on salary-
+      //If the salary is less than 3 lakh it should not want to pay tax.
+      //If the salary is greater or equal to 3 lakh and less than 7.5 lakh it should pay 10 percent tax on that.
+      //If the salary is greater or equal to 7.5 lakh it should pay 20 percent tax on that.
+
+      function salaryCalculate(){
+
+      let salary = parseFloat(window.prompt("enter your salary"));
+
+      let totelSalary = 0;
+
+      if(salary < 300000)
+      {
+        window.alert("it should not want to payu tax");
+      }
+
+      else if(salary >= 300000 && salary < 750000)
+      {
+        window.alert("it should pay 10 % tax");
+        totelSalary = salary * 0.10;
+        window.alert("totale tax is = " + totelSalary);
+      }
+
+      else if(salary >= 750000)
+      {
+        window.alert("it should pay 20 % tax");
+        totelSalary = salary * 0.20;
+        window.alert("totale tax is= " + totelSalary);
+      }
+      
+    }
+
+salaryCalculate();

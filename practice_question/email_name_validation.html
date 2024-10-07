@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p id="errorname"></p> <br>
+        <input type="text" name="name" id="name" placeholder="Enter Name" onblur="removevalidet();"> <br> <br>
+         <p id="erroremail"></p> <br>
+        <input type="email" name="email" id="email" placeholder="Enter Email" onblur="removevalidet();"> <br> <br>
+        <button onclick="return validet();">Submit</button>
+    </form>
+    <script src="/practice_question/email_name_validation.js"></script>
+</body>
+</html>

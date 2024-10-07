@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Tax Calculator</title>
+</head>
+<body>
+    <h1>Salary Tax Calculator</h1>
+    
+    <label for="salary">Enter your salary: </label>
+    <input type="number" id="salary" placeholder="Enter your salary in ₹">
+    <button onclick="calculateTax()">Calculate Tax</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateTax() {
+            // Get the salary entered by the user
+            const salary = parseFloat(document.getElementById('salary').value);
+            let tax = 0;
+
+            // Calculate tax based on salary slabs
+            if (salary < 300000) {
+                tax = 0;
+            } else if (salary >= 300000 && salary < 750000) {
+                tax = salary * 0.10; // 10% tax
+            } else if (salary >= 750000) {
+                tax = salary * 0.20; // 20% tax
+            }
+
+            // Display the result
+            document.getElementById('result').innerHTML = 
+                `For a salary of ₹${salary}, the tax to be paid is ₹${tax.toFixed(2)}.`;
+        }
+    </script>
+</body>
+</html>
