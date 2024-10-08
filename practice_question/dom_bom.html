@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM और BOM का उदाहरण</title>
+</head>
+<body>
+
+    <!-- DOM का उदाहरण -->
+    <h1 id="heading">मूल शीर्षक</h1>
+    <button onclick="changeHeading()">शीर्षक बदलें</button>
+
+    <!-- BOM का उदाहरण -->
+    <h2>ब्राउज़र विंडो की चौड़ाई</h2>
+    <p id="windowWidth"></p>
+    <button onclick="displayWindowWidth()">विंडो की चौड़ाई दिखाएं</button>
+
+    <script>
+        // DOM का उदाहरण: HTML तत्व की सामग्री बदलना
+        function changeHeading() {
+            document.getElementById("heading").textContent = "शीर्षक बदल दिया गया!";
+        }
+
+        // BOM का उदाहरण: ब्राउज़र विंडो की चौड़ाई दिखाना
+        function displayWindowWidth() {
+            const width = window.innerWidth;
+            document.getElementById("windowWidth").textContent = "विंडो की चौड़ाई: " + width + "px";
+        }
+    </script>
+
+</body>
+</html>

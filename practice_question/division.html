@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+        text-align: center; 
+      }
+      div #photo{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div onmouseenter="change();" onmouseleave="remove();">
+      <img id="photo"
+        src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+        alt="" height="300px" width="300px" 
+      />
+    </div>
+    <script src="/practice_question/division.js"></script>
+  </body>
+</html>
