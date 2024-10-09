@@ -39,7 +39,7 @@ function slider(){
             selectarticle.style.marginLeft = "0px"
             selectarticle.style.transition = "margin-left .5s";
 
-            count == 0;
+            count = 1;
         }
 
     }

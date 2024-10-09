@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salary Tax Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="/tax.css">
 </head>
 <body>
-    <h1>Salary Tax Calculator</h1>
-    
-    <label for="salary">Enter your salary: </label>
-    <input type="number" id="salary" placeholder="Enter your salary in ₹">
-    <button onclick="calculateTax()">Calculate Tax</button>
 
-    <p id="result"></p>
+<div class="slider">
+  <div class="slides">
+    <!-- Slide 1 -->
+    <div class="slide">
+      <img src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg" alt="Slide 1">
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnGWEwXpRS7z7rVaGrjIWWTdE8_TiYTGiYjA&s" alt="Slide 2">
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGK3diR3Zi-mnOXEaj-3ewmFyRYVxGzVzZw&s" alt="Slide 3">
+    </div>
+  </div>
+</div>
 
-    <script>
-        function calculateTax() {
-            // Get the salary entered by the user
-            const salary = parseFloat(document.getElementById('salary').value);
-            let tax = 0;
-
-            // Calculate tax based on salary slabs
-            if (salary < 300000) {
-                tax = 0;
-            } else if (salary >= 300000 && salary < 750000) {
-                tax = salary * 0.10; // 10% tax
-            } else if (salary >= 750000) {
-                tax = salary * 0.20; // 20% tax
-            }
-
-            // Display the result
-            document.getElementById('result').innerHTML = 
-                `For a salary of ₹${salary}, the tax to be paid is ₹${tax.toFixed(2)}.`;
-        }
-    </script>
+<script src="/tax.js"></script>
 </body>
 </html>
