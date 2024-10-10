@@ -9,9 +9,11 @@ function stop(){
     selecth1.innerHTML = `: ${count} `;
 
     }
+}
 
-
-    setInterval(show,2000)
+function data(){
+    count = 0;
+    setInterval(show,5000)
     function show(){
 
     count++;
