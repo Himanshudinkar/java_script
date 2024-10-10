@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Example</title>
+</head>
+<body>
+    <h1 id="output">Count 1: 0</h1>
+    <h1 id="output2">Count 2: 0</h1>
+    <button onclick="startBoth()">Start Both Counters</button>
+    <button onclick="stopIntervals()">Stop Both Counters</button>
+
+    <script>
+        // Global variables to hold interval IDs
+        let interval1, interval2;
+        let count1 = 0, count2 = 0;
+
+        // Function to start both intervals
+        function startBoth() {
+            count1 = 0;  // Reset count1
+            count2 = 0;  // Reset count2
+
+            // Clear any previous intervals if they exist
+            if (interval1) clearInterval(interval1);
+            if (interval2) clearInterval(interval2);
+
+            // Start first interval (1 second)
+            interval1 = setInterval(function() {
+                count1++;
+                let selecth1 = document.querySelector('#output');
+                selecth1.innerHTML = `Count 1: ${count1}`;
+            }, 1000);
+
+            // Start second interval (5 seconds)
+            interval2 = setInterval(function() {
+                count2++;
+                let selecth1 = document.querySelector('#output2');
+                selecth1.innerHTML = `Count 2: ${count2}`;
+            }, 2000);
+        }
+
+        // Function to stop both intervals
+        function stopIntervals() {
+            clearInterval(interval1);
+            clearInterval(interval2);
+        }
+    </script>
+</body>
+</html>
