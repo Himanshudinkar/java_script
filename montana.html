@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitol Shop</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <div id="products"></div>
+
+    <script>
+        // Array storing product data
+        let products = [
+            {name: "T-shirt", price: "$15", description: "100% cotton, comfortable fit"},
+            {name: "Jeans", price: "$40", description: "Slim fit, durable denim"},
+            {name: "Sneakers", price: "$60", description: "Stylish and comfortable"}
+        ];
+
+        // Get the div element to display products
+        let productContainer = document.getElementById("products");
+
+        // Loop through the array and create a product card for each item
+        products.forEach(function(product) {
+            let productCard = document.createElement("div");
+            productCard.innerHTML = `
+                <h2>${product.name}</h2>
+                <p>Price: ${product.price}</p>
+                <p>${product.description}</p>
+            `;
+            productContainer.appendChild(productCard);
+        });
+    </script>
+</body>
+</html>
