@@ -100,13 +100,27 @@
 
 // console.log(newarr);
 
-let number = "1234567890qwertyuioasdfghjkxcvbn!@#$%^&*()";
+// let number = "1234567890qwertyuioasdfghjkxcvbn!@#$%^&*()";
 
-// number.Math.round();
+// // number.Math.round();
 
 
 
-console.log(Math.random());
+// console.log(Math.random());
 
-let randomInt = Math.floor(Math.random() * 10000) + 1;
-console.log(randomInt );  // Random integer between 1 and 10
+// let randomInt = Math.floor(Math.random() * 10000) + 1;
+// console.log(randomInt );  // Random integer between 1 and 10
+
+
+function playGame(userGuess) {
+  let winningNumber = Math.floor(Math.random() * 10) + 1;
+  console.log(`Winning Number: ${winningNumber}`);
+  
+  if (userGuess === winningNumber) {
+    console.log("Congratulations! You guessed it right.");
+  } else {
+    console.log("Sorry, try again.");
+  }
+}
+
+playGame(5);  // Output: "Winning Number: 7. Sorry, try again."
