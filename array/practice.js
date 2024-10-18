@@ -54,10 +54,59 @@
 //     i++;
 // }
 
-let arr = [76,822,56,928,9,12,];
+// let arr = [76,822,56,928,9,12,];
 
-for(let i of arr)
-{
-    console.log(i);
-}
+// for(let i of arr)
+// {
+//     console.log(i);
+// }
 
+// let arr = ["hello","apllel","aeplle","order","banana","papaya"];
+
+// arr.sort();
+
+// console.log(arr);
+
+// let arr = [34,65,90,10,2,1,45,248,999,283646];
+
+// let output = arr.reduce( (a,b) => a+b);
+
+// console.log(output)
+
+// let arr1 =  [55,2,98,13,2331,31];
+// arrstr.sort();
+// console.log(arrstr);
+
+// let arr = [67, 43,826,287,11,43,46];
+// arr.sort(function(a,b){return a-b});
+// console.log(arr);
+
+// let arr1 = [673,64,928,12,34,];
+// arr1.sort(function(a,b){return b-a});
+// console.log(arr1);
+
+// let output = arr1.reduce(function(a,b){return a+b});
+// console.log(output);
+
+// let answerstr = arr1.toString()
+// console.log(answerstr)
+
+// let answerjoin = arr1.join(" ");
+// console.log(answerjoin)
+
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+
+// let newarr = arr.map((value) => { return value});
+
+// console.log(newarr);
+
+let number = "1234567890qwertyuioasdfghjkxcvbn!@#$%^&*()";
+
+// number.Math.round();
+
+
+
+console.log(Math.random());
+
+let randomInt = Math.floor(Math.random() * 10000) + 1;
+console.log(randomInt );  // Random integer between 1 and 10
