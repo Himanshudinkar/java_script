@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Captcha Code</title>
+    <link rel="stylesheet" href="/captcha/maths.css">
+</head>
+<body onload="Captcha1();">
+    <div class="input">
+        <form >
+            <h1>Simple Captcha Code</h1>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required>
+
+            <p id="rend"></p>
+
+            <input type="number" name="code" id="code" placeholder="Enter Captcha" required>
+
+            <button onclick="return Captcha2();">Submit</button>
+
+            <div id="output"></div>
+        </form>
+        <script src="/captcha/maths.js"></script>
+    </div>
+</body>
+</html>
