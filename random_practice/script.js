@@ -1,4 +1,6 @@
 function imagegenrater() {
+    // setInterval(run,2000);
+    // function run() {
   let arr = [
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCy16nhIbV3pI1qLYHMJKwbH2458oiC9EmA&s",
     "https://i0.wp.com/picjumbo.com/wp-content/uploads/amazing-stone-path-in-forest-free-image.jpg?w=600&quality=80",
@@ -23,3 +25,4 @@ function imagegenrater() {
   let output = document.querySelector("#image");
   output.innerHTML = `<img src = "${arroutput}" alt ="image not found" style="height: 400px; width: 300px; border: 1px solid black; border-radius: 10px;">`;
 }
+// }
