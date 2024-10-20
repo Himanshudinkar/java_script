@@ -8,6 +8,7 @@ function Captcha1() {
 
     let captcharend = document.querySelector('#rend');
     captcharend.innerHTML = `${rend1} + ${rend2} = ?`;
+
 }
 
 function Captcha2() {

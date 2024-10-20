@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Simple Captcha Code</title>
-    <link rel="stylesheet" href="/captcha/maths.css">
-</head>
-<body onload="Captcha1();">
+    <link rel="stylesheet" href="/captcha/maths.css" />
+  </head>
+  <body onload="captcha1();">
     <div class="input">
-        <form >
-            <h1>Simple Captcha Code</h1>
+      <form>
+        <h1>Simple Captcha Code</h1>
 
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter Name" required>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Name"
+          required
+        />
 
-            <p id="rend"></p>
+        <p id="rend"></p>
+        <i class="fa-solid fa-arrows-rotate" style="color: #0f0f10; cursor: pointer;" id="iii" onclick="refreshPage();"></i>
 
-            <input type="number" name="code" id="code" placeholder="Enter Captcha" required>
+        <input
+          type="text"
+          name="code"
+          id="code"
+          placeholder="Enter Captcha"
+          required
+        />
 
-            <button onclick="return Captcha2();">Submit</button>
+        <button onclick="return captcha2();">Submit</button>
 
-            <div id="output"></div>
-        </form>
-        <script src="/captcha/maths.js"></script>
+        <div id="output"></div>
+      </form>
+      <script src="/captcha/maths.js"></script>
     </div>
-</body>
+  </body>
 </html>
