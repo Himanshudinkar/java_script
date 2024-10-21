@@ -26,16 +26,13 @@
       font-family: 'Courier New', Courier, monospace;
       letter-spacing: 3px;
       color: #333;
-      /* display: inline-block; */
-      /* transform: rotate(-5deg); */
       text-shadow: 
-        2px 2px 0px #f0f, 
+        2px 2px 0px rgb(38, 33, 38), 
         -2px -2px 0px #0ff, 
         1px -1px 0px #ff0;
       padding: 10px;
       border-radius: 10px; 
       border: 1px solid rgba(175, 165, 165, 0.564);
-      /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 }
 .input form input{
     padding: 8px 70px 8px 3px;

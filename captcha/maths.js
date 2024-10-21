@@ -33,6 +33,4 @@ function captcha2() {
     }
 }
 
- function refreshPage() {
-        location.reload(captcha1);
-      }
+
