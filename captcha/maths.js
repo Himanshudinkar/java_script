@@ -1,6 +1,7 @@
 let store = "";
 
 function captcha1(){
+    store=''
 
     let str = "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
 
@@ -16,6 +17,7 @@ function captcha1(){
     let rend = document.querySelector('#rend');
     rend.innerHTML = `${store}`;
 
+    
 }
 
 function captcha2() {
