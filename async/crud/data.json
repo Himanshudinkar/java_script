@@ -1,0 +1,42 @@
+{
+    "product" :[
+        {
+            "id": 1,
+            "email" : "himanhsudinnkar@gmail.com",
+            "username" : "Himanshu Dinkar"
+        },
+         {
+            "id": 2,
+            "email" : "sudheerkumar@gmail.com",
+            "username" : "Sudhir Kumar"
+        },
+         {
+            "id": 3,
+            "email" : "niranjan@gmail.com",
+            "username" : "Niranjan Kumar"
+        },
+         {
+            "id": 3,
+            "email" : "vikasrajput@gmail.com",
+            "username" : "Vikash Kumar"
+        },
+         {
+            "id": 4,
+            "email" : "dhruvprajapati@gmail.com",
+            "username" : "Dhruv Prajapati"
+        },
+         {
+            "id": 5,
+            "email" : "manyapandit@gmail.com",
+            "username" : "manya pandit"
+        }
+        ,
+         {
+            "id": 6,
+            "email" : "ritukhan@gmail.com",
+            "username" : "ritu khan"
+        }
+
+
+    ]
+}
