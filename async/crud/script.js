@@ -12,8 +12,8 @@ async function run(){
         <td>${items.email}</td>
         <td>${items.username}</td>
         <td><i class="fa-solid fa-eye" style="color: rgb(16, 144, 194);"></i></td>
-        <td><i onclick="del(${items.id})" class="fa-solid fa-delete-left" style="color: rgb(255, 0, 0);"></td>
-        <td><i onclick="updateform(${items.id})" class="fa-solid fa-pen-to-square" style="color: rgb(255, 94, 0);"></i></td>
+        <td><i onclick="del('${items.id}')" class="fa-solid fa-delete-left" style="color: rgb(255, 0, 0);"></td>
+        <td><i onclick="updateform('${items.id}')" class="fa-solid fa-pen-to-square" style="color: rgb(255, 94, 0);"></i></td>
         </tr>
     `).join(" ");
 }
@@ -64,4 +64,24 @@ function finalupdate(){
     fetch(`http://localhost:4000/product/${uid}`,{method:"PUT",body:JSON.stringify(obj)});;
 }
 
-//hide row 
+//add form
+
+function showdataform(){
+    let selectadform = document.querySelector('#addform');
+    selectadform.style.display = "block";
+
+     let selectwebsite = document.querySelector('#website');
+    selectwebsite.style.display = "none";
+}
+
+function add(){
+    let email =  document.querySelector('#emailadd').value;
+    let username = document.querySelector('#usernameadd').value;
+    
+    let obj = {
+        "email":email,
+        "username":username,
+    }
+
+    fetch(`http://localhost:4000/product/`,{method:"POST",body:JSON.stringify(obj)});;
+}

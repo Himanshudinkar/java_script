@@ -56,9 +56,9 @@ function add(){
     let price =  document.querySelector('#prices').value;
     
     let obj = {
-        "images":image,
-        "descriptions":description,
-        "prices" :price
+        "image":image,
+        "description":description,
+        "price" :price
     }
 
     console.log(obj)

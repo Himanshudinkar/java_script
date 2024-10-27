@@ -3,7 +3,29 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+#addform{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    background-color: rgb(13, 73, 225);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    display: none;
+}
+#addform input{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#addform button{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
 button{
     background-color: rgb(0, 157, 255);
     color: white;
