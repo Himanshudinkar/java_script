@@ -15,7 +15,29 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4; 
 }
-
+#upform{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    background-color: rgb(13, 73, 225);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    display: none;
+}
+#upform input{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#upform button{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
 .container {
     margin: 50px;
 }

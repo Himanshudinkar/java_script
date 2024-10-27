@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Filter Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        img {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Filter Data from API</h1>
+
+    <select id="filvalue">
+        <option value="pname">Product Name</option>
+        <option value="bname">Brand Name</option>
+        <option value="pprice">Price Less Than</option>
+    </select>
+
+    <input id="searchbox" placeholder="Enter Search Value" />
+    <button onclick="fil()">Search</button>
+
+    <table id="tabledata">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Brand</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filtered Data will be displayed here -->
+        </tbody>
+    </table>
+
+    <script src="filter.js"></script>
+
+</body>
+</html>

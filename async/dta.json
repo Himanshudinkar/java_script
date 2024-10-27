@@ -1,76 +1,22 @@
 {
   "product": [
     {
-      "image": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "description": "mens fashion jeens",
-      "price": "Rs. 2000",
-      "id": "2"
+      "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+      "description": "777",
+      "price": "woomwn",
+      "id": "8349"
     },
     {
-      "image": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description": "womens fashion suit",
-      "price": "Rs. 200000",
-      "id": "3"
+      "image": "undefined",
+      "description": "undefined",
+      "price": "",
+      "id": "43fd"
     },
     {
-      "id": "6",
-      "image": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description ": "womens fashion jj suit",
-      "price ": "Rs. 1599"
-    },
-    {
-      "id": "8",
-      "image ": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description": "womens fashion suit",
-      "price": "Rs. 1599"
-    },
-    {
-      "id": "9",
-      "image": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description ": "womens fashion suit",
-      "price": "Rs. 1599"
-    },
-    {
-      "id": "10",
-      "image": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description ": "womens fashion suit",
-      "price": "Rs. 1599"
-    },
-    {
-      "id": "11",
-      "image": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description": "womens fashion suit",
-      " price ": "Rs. 1599"
-    },
-    {
-      "id": "12",
-      " image": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description": "womens fashion suit",
-      "price": "Rs. 1599"
-    },
-    {
-      "id": "13",
-      " image": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description": "womens fashion suit",
-      "price ": "Rs. 1599"
-    },
-    {
-      "id": "14",
-      " image ": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      " description": "womens fashion suit",
-      " price": "Rs. 1599"
-    },
-    {
-      "id": "15",
-      " image ": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      " description": "womens fashion suit",
-      "price": "Rs. 1599"
-    },
-    {
-      "id": "16",
-      "image ": "https://capital-shop-multi-page.vercel.app/Images/xl-nov-pink-nsw-gs-xl-gosriki-original-imagubadx7s3yktg.webp",
-      "description": "womens fashion suit",
-      "price": "Rs. 1599"
+      "id": "5283",
+      "images": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+      "descriptions": "women",
+      "prices": "34"
     }
   ]
 }

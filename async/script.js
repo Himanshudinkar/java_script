@@ -45,6 +45,32 @@ function finalupdate(){
 
 }
 
+function showaddform(){
+    let selectadform = document.querySelector('#addform');
+    selectadform.style.display = "block";
+}
+
+function add(){
+    let image =  document.querySelector('#images').value;
+    let description = document.querySelector('#descriptions').value;
+    let price =  document.querySelector('#prices').value;
+    
+    let obj = {
+        "images":image,
+        "descriptions":description,
+        "prices" :price
+    }
+
+    console.log(obj)
+    fetch(`http://localhost:4000/product/`,{
+        method:"POST",
+        body:JSON.stringify(obj)
+    })
+
+
+
+}
+
 
 async function run(){
     let data = await fetch('http://localhost:4000/product');
@@ -57,8 +83,8 @@ async function run(){
     <td><img width="100px" src="${items.image}"></td>
     <td>${items.description}</td>
     <td>${items.price}</td>
-    <td><button onclick="del(${items.id})">Delete</button></td>
-    <td><button onclick="updateform(${items.id})">update</button></td>
+    <td><button onclick="del('${items.id}')">Delete</button></td>
+    <td><button onclick="updateform('${items.id}')">update</button></td>
     </tr>
     `).join(" ")
 }
