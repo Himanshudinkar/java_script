@@ -22,7 +22,7 @@ async function run(){
 function del(items){
     let res = window.confirm("do you really want to delete this information")
    
-    if(res) hhhhhhhhhh
+    if(res)
     {
         
         fetch(`http://localhost:4000/product/${items}`,{method:"DELETE"});
