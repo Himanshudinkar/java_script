@@ -30,9 +30,19 @@
     
     <div id="website">
     <h1>CRUD TUTORIAL</h1>
-
+   
+     <div class="search">
     <button onclick="showdataform();">Add</button>
 
+     <div class="search2">
+     <select name="" id="filvalue">
+        <option value="email"> search by email </option>
+        <option value="username"> search by username </option>
+    </select>
+    <input type="text" id="searchbox">
+    <button onclick="fil()"> search </button>
+    </div>
+   </div>
     <div class="container" >
     <table id="tabledata"> 
         <tr>

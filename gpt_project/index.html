@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/gpt_project/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navbar -->
+        <div class="navbar">
+            <h1>Dashboard</h1>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <!-- Dashboard Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>Users</h3>
+                <p>150</p>
+            </div>
+            <div class="card">
+                <h3>Products</h3>
+                <p>320</p>
+            </div>
+            <div class="card">
+                <h3>Orders</h3>
+                <p>70</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>$10,500</p>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-container">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-data">
+                    <!-- JavaScript से डेटा जोड़ा जाएगा -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/gpt_project/script.js"></script>
+</body>
+</html>

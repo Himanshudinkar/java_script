@@ -22,7 +22,7 @@ async function run(){
 function del(items){
     let res = window.confirm("do you really want to delete this information")
    
-    if(res)
+    if(res) hhhhhhhhhh
     {
         
         fetch(`http://localhost:4000/product/${items}`,{method:"DELETE"});
@@ -84,4 +84,46 @@ function add(){
     }
 
     fetch(`http://localhost:4000/product/`,{method:"POST",body:JSON.stringify(obj)});;
+}
+
+//serch
+
+async function fil(){
+    let data = await fetch('http://localhost:4000/product');
+    let res = await data.json();
+
+    let selectopt = document.querySelector('#filvalue').value;
+    let selectsearchbox = document.querySelector('#searchbox').value;
+
+    if(selectopt === 'email')
+    {
+        let filterdata =  res.filter((items)=> items.email === selectsearchbox);
+        let selecttable = document.querySelector('#tabledata');
+        selecttable.innerHTML= filterdata.map((items)=>`
+       <tr>
+        <td>${items.id}</td>
+        <td>${items.email}</td>
+        <td>${items.username}</td>
+        <td><i class="fa-solid fa-eye" style="color: rgb(16, 144, 194);"></i></td>
+        <td><i onclick="del('${items.id}')" class="fa-solid fa-delete-left" style="color: rgb(255, 0, 0);"></td>
+        <td><i onclick="updateform('${items.id}')" class="fa-solid fa-pen-to-square" style="color: rgb(255, 94, 0);"></i></td>
+        </tr>
+    `).join(" ")
+    }
+    
+    else if(selectopt === 'username')
+    {
+        let filterdata =  res.filter((items)=> items.username ===  selectsearchbox);
+        let selecttable = document.querySelector('#tabledata');
+        selecttable.innerHTML= filterdata.map((items)=>`
+        <tr>
+        <td>${items.id}</td>
+        <td>${items.email}</td>
+        <td>${items.username}</td>
+        <td><i class="fa-solid fa-eye" style="color: rgb(16, 144, 194);"></i></td>
+        <td><i onclick="del('${items.id}')" class="fa-solid fa-delete-left" style="color: rgb(255, 0, 0);"></td>
+        <td><i onclick="updateform('${items.id}')" class="fa-solid fa-pen-to-square" style="color: rgb(255, 94, 0);"></i></td>
+        </tr>
+    `).join(" ")
+    }
 }
