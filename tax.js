@@ -12,6 +12,6 @@ function nextSlide() {
   currentSlide = (currentSlide + 1) % totalSlides;
   showSlide(currentSlide);
 }
-
+//jjjjj
 
 setInterval(nextSlide, 3000);
