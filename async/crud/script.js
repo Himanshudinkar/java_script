@@ -124,6 +124,6 @@ async function fil(){
         <td><i onclick="del('${items.id}')" class="fa-solid fa-delete-left" style="color: rgb(255, 0, 0);"></td>
         <td><i onclick="updateform('${items.id}')" class="fa-solid fa-pen-to-square" style="color: rgb(255, 94, 0);"></i></td>
         </tr>
-    `).join(" "
+    `).join(" ")
     }
 }
