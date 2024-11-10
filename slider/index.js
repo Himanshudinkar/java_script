@@ -13,7 +13,7 @@ function moveSlide(step) {
 
 function autoSlide() {
     currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlidePosition()
+    updateSlidePosition();
 }
 
 setInterval(autoSlide, 3000); // Change image every 3 seconds
