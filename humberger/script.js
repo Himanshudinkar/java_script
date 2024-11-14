@@ -11,3 +11,8 @@ function toggleNav() {
 
   isNavOpen = !isNavOpen; // Toggle the state
 }
+
+function data(){
+  let fnt = document.querySelector('#navs');
+  fnt.style.display = "none";
+}

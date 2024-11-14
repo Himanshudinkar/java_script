@@ -8,5 +8,6 @@ localStorage.setItem("name" ,name)
 localStorage.setItem("age" ,age)
 localStorage.setItem("city" ,city)
 
+
 }
 
