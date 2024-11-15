@@ -14,15 +14,14 @@ function data(){
 
 }
 
-// let ob = {
-//     name :"himanshu",
-//     age : 52,
-//     contect : 12344
-// }
+let m = JSON.parse(localStorage.getItem("userdata"));
+console.log(m)
 
-// console.log(ob)
 
-// for( v in ob){
+let myname = document.querySelector('#myname')
+let mypass = document.querySelector('#mypass')
+let mycity = document.querySelector('#mycity')
 
-//     console.log(ob[v])
-// }
+myname.innerHTML = m.naam
+mypass.innerHTML = m.pass
+mycity.innerHTML = m.sahar
