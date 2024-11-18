@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/kashim_sir/localstorage_project_form.html">
+        <div id="errorname"></div>
+        <label for="">Name</label>
+        <input type="text" name="name" id="name" onblur="s('name')"> <br> <br>
+        <div id="erroremail"></div>
+        <label for="">Email</label>
+        <input type="email" name="email" id="email" onblur="s('email')">  <br> <br>
+        <div id="errormobile"></div>
+        <label for="">Mobile</label>
+        <input type="tel" name="mobile" id="mobile" onblur="s('mobile')"> <br><br>
+        <div id="errorpsw"></div>
+        <label for="">Password</label>
+        <input type="password" name="psw" id="psw" onblur="s('psw')" > <br> <br>
+        <label for="">Confirm Password</label>
+        <input type="password" name="cpsw" id="cpsw"> <br> <br>
+        <button onclick="return formValidation();">submit</button>
+    </form>
+    <script src="/kashim_sir/localstorage_project.js"></script>
+</body>
+</html>
