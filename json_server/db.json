@@ -1,0 +1,14 @@
+{
+    "student" :[
+        {
+            "name":"himanshu",
+            "age":23,
+            "address" : "bpl"
+        },
+        {
+            "name":"vikas",
+            "age":24,
+            "address" : "gurugram"
+        }
+    ]
+}
