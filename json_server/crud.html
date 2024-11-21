@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #updata{
+            display: none;
+        }
+    </style>
+</head>
+<body onload="getdata();">
+
+    <!-- data add karne ke liye form -->
+    <div id="updata">
+        <form action="">
+            <label for="">Photo</label>
+            <input type="text" name="photo" id="photo"> <br><br>
+            <label for="">Brand</label>
+            <input type="text" name="brand" id="brand"> <br> <br>
+            <label for="">Price</label>
+            <input type="text" name="price" id="price"> <br><br>
+            <button onclick="adddata()">INSERT DATA</button> <br><br>
+        </form>
+    </div>
+    
+    <!-- data add karne ke liye form -->
+
+
+    
+    <!-- button per click karne per form ayega -->
+    <button onclick="sowdata();">ADD DATA</button>
+     <!-- button per click karne per form ayega -->
+
+
+    <!-- table-main content -->
+    <table border="1px solid black" align="center">
+        <thead>
+            <th>ID</th>
+            <th>IMAGE</th>
+            <th>BRAND</th>
+            <th>PRICE</th>
+            <th>DELETE</th>
+        </thead>
+        <tbody id="output">
+        </tbody>
+    </table>
+    <!-- table-main content -->
+    <script src="/json_server/crud.js"></script>
+</body>
+</html>

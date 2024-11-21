@@ -50,3 +50,21 @@ function insertdata(){
 }
 
 
+//update data
+
+async function myedit(id) {
+    let myupdate = await fetch(`http://localhost:3000/student`)
+    let redata = await myupdate.json();
+
+    let senddata = `
+
+        <input type="text" value="${redata.id}" readonly> <br>
+        <input type="text" value="${redata.name}" id="name1"> <br>
+        <input type="text" value="${redata.age}" id="age1"> <br>
+        <input type="text" value="${redata.address}" id="address1"> <br>
+        <button>Submit</button>
+    `
+
+    document.querySelector('#edittable').innerHTML = senddata;
+    
+}

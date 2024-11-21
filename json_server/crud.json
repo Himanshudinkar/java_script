@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "photo": "https://www.jiomart.com/images/product/original/rvrgwpjvsp/bruton-trendy-sports-shoes-for-men-blue-product-images-rvrgwpjvsp-0-202209021256.jpg?im=Resize=(500,630)",
+      "brand": "Campus",
+      "price": 1299,
+      "id": "b19f"
+    },
+    {
+      "photo": "https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0",
+      "brand": "nike",
+      "price": 2499,
+      "id": "21c0"
+    },
+    {
+      "id": "b6ad",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9wsx_w5qb1u71Q25DnFu_PK-0RCBGp1nBxQ&s",
+      "brand": "Sketers",
+      "price": "2999"
+    },
+    {
+      "id": "960e",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9wsx_w5qb1u71Q25DnFu_PK-0RCBGp1nBxQ&s",
+      "brand": "campus",
+      "price": "5999"
+    },
+    {
+      "id": "f33d",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvD6-MIRTkTeWU0RgeFdlGMeDWCk4Ga3axOg&s",
+      "brand": "Redcheef",
+      "price": "5800"
+    }
+  ]
+}
