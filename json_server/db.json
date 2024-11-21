@@ -1,14 +1,34 @@
 {
-    "student" :[
-        {
-            "name":"himanshu",
-            "age":23,
-            "address" : "bpl"
-        },
-        {
-            "name":"vikas",
-            "age":24,
-            "address" : "gurugram"
-        }
-    ]
+  "student": [
+    {
+      "name": "vikas",
+      "age": 24,
+      "address": "gurugram",
+      "id": "a99d"
+    },
+    {
+      "name": "vikas",
+      "age": 24,
+      "address": "gurugram",
+      "id": "90a0"
+    },
+    {
+      "name": "vikas",
+      "age": 24,
+      "address": "gurugram",
+      "id": "a99d"
+    },
+    {
+      "name": "vikas",
+      "age": 24,
+      "address": "gurugram",
+      "id": "90a0"
+    },
+    {
+      "id": "024a",
+      "name": "Himanshu Dinkar",
+      "age": "29",
+      "address": "bhopal"
+    }
+  ]
 }
